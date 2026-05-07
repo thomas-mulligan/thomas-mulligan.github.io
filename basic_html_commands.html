@@ -1,0 +1,520 @@
+<html>
+
+<head>
+<title>Basic HTML commands</title>
+</head>
+
+<body bgcolor=FFFFFF>
+
+<body>
+
+<center><h1>Basic HTML commands</h1></center>
+<hr>
+
+This section covers some basic HTML commands and explains the steps involved in
+preparing a document for viewing via the World Wide Web.<p>
+
+
+
+<a name="A"><h2>Basic steps: using tags</a></h2>
+
+HTML uses tags to communicate to the client (browser) how to display text and
+images.  Tags are contained in &lt;<b> </b>&gt; symbols.  In most cases you
+start with the beginning tag, put in the word or words that will be affected by
+this tag, and at the end of the string of word(s), you place a closing
+tag.<p>   
+
+For example, to create a title for a document you would do the following:
+<pre>
+ &lt;title&gt;My First HTML Document&lt;/title&gt;
+
+</pre>
+
+
+The closing tag normally contains a "/" before the directive to indicate the
+termination of the action.<p>
+
+HTML tags are not case-sensitive, although URLs generally are. In most cases
+(with the exception of preformatted text) HTML collapses many spaces to one
+space and does not read blank lines.  However, when you write your text you
+should leave several blank lines between paragraphs to make editing your HTML
+source document easier.<p>
+
+
+<hr>
+<h3><a name="a">The HTML tag</a></h3>
+
+Although not currently required by all clients, the &lt;html&gt; tag signals
+the point where text should start being interpreted as HTML code. It's
+probably a good idea to include it in all your documents now, so you don't have
+to go back to your files and add it later.<p>
+
+The &lt;html&gt; tag is usually placed on the first line of your
+document.  At the end of your document you should close with the &lt;/html&gt;
+tag.<p>
+
+<hr>
+
+<h3><a name="b">The head tag</a></h3>
+
+Just like the header of a memo, the head of an HTML document contains special
+information, like its title. The head of a document is demarcated by
+&lt;head&gt; and &lt;/head&gt; respectively.<p>
+
+For the purposes of this class, only the title tag, below, should be included
+in the document head. A typical head section might look like<p>
+
+<pre>
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;My First HTML Document&lt;/title&gt;
+&lt;/head&gt;
+</pre>
+
+<hr>
+
+<a name="d"><h3>Titles</h3></a>
+
+A title tag allows you to specify a <i>Document Title</i> in your browser
+window. When people make hotlists, this title is what they see in their list
+after they add your document. The format is:<p> 
+
+<pre>
+&lt;title&gt;My First HTML Document&lt;/title&gt
+</pre>
+
+Remember, the title usually doesn't appear in the document itself, but in a
+title box or bar at the top of the window.<p>     
+<hr>
+
+<h3><a name="c">The body tag</a></h3>
+
+Like you might expect, the body tags &lt;body&gt; and &lt;/body&gt; define the
+beginning and end of the bulk of your document. All your text, images, and
+links will be in the body of the document. <p>
+
+The body should start after the head. A typical page might begin like<p>
+
+<pre>
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;My First HTML Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+</pre>
+
+
+<hr>
+
+
+
+<a name="e"><h3>Headers</h3></a>
+
+There are up to six levels of headers that can be used in your document, h1
+through h6.  Header 1 is the largest header and they get progressively smaller
+through header 6.  Below are each of the six headers and how they usually
+appear in relation to one another.<p>
+
+
+<pre>
+&lt;h1&gt;This is a header 1 tag&lt;/h1&gt;
+<h1>This is a header 1 tag</h1>
+
+&lt;h2&gt;This is a header 2 tag&lt;/h2&gt;
+<h2>This is a header 2 tag</h2>
+
+&lt;h3&gt;This is a header 3 tag&lt;/h3&gt;
+<h3>This is a header 3 tag</h3>
+
+&lt;h4&gt;This is a header 4 tag&lt;/h4&gt;
+
+<h4>This is a header 4 tag</h4>
+
+&lt;h5&gt;This is a header 5 tag&lt;/h5&gt;
+<h5>This is a header 5 tag</h5>
+
+&lt;h6&gt;This is a header 6 tag&lt;/h6&gt;
+<h6>This is a header 6 tag</h6>
+</pre>
+
+Headers, as you notice, not only vary in size, they are also bold and have a
+blank line inserted before and after them. It's important to use headers only
+for headings, not just to make text bold (we cover the bold tag later).<p>
+
+
+<hr>
+<a name="f"><h3>Paragraphs</h3></a>
+
+In HTML, a paragraph tag &lt;p&gt; should be put at the end of every paragraph
+of "normal" text (normal being defined as not already having a tag associated
+with it).<p>
+
+<dl>
+<dd>&lt;p&gt; causes a line break and adds a trailing blank line<p>
+
+<dd>&lt;br&gt; causes a line break with no trailing blank line<p>
+</dl>
+
+As a <em>convenience</em> to yourself and others who might have to edit your
+HTML documents, it's a <strong>very</strong> good idea to put two or three
+blank lines between paragraphs to facilitate editing.<p>  
+
+
+<hr>
+
+<a name="g"><h3>Preformatted text</h3></a>
+
+
+The preformatted text tag allows you to include text in your document that
+normally remains in a fixed-width font and retains the spaces, lines, and tabs
+of your source document.  In other words, it leaves your text as it appears
+initially or just as you typed it in. Most clients collapse multiple spaces
+into one space, even tabs are collapsed to one space. The only way to
+circumvent this is to use the preformatted tag. Visually, preformatted text
+looks like a courier font.<p>      
+
+<pre>
+&lt;pre&gt;this is 
+
+               an example 
+               of a    preformatted 
+        text tag&lt;/pre&gt;
+</pre>        
+ 
+And this is how it displays:
+
+<pre>
+this is 
+
+               an example 
+               of a    preformatted 
+        text tag        
+</pre>        
+
+
+<hr>
+
+<a name="h"><h3>Boldface and Italics</h3></a>
+
+You can add emphasis to text by using the boldface and italic tags or the
+emphasis and strong tags.<p>
+
+There is an underline tag as well, but most people don't use it since text that
+is linked is often underlined. The potential for confusion and the archaic
+nature of underlining in general make it a poor marker for emphasis.<p>
+
+When using these tags, you usually cannot (and probably should not) have text
+that is both boldface and italics; the last tag encountered is usually the tag
+that is displayed.  For example, if you had a boldface tag followed immediately
+by an italic tag, the tagged word would appear in italics.<p>
+
+<dl>
+<dt><strong>Physical tags</strong>
+
+<dd>This is a &lt;b&gt;boldface&lt;/b&gt; tag.
+
+<dd>This is how <b>boldfacing</b> appears.<p>
+
+<dd>This is an &lt;i&gt;italic&lt;/i&gt; tag.
+<dd>This is how <i>italics</i> appear.<p>
+
+<dt><strong>Logical tags</strong>
+
+<dd>This is a &lt;strong&gt;strongly emphasized&lt;/strong&gt; tag.
+<dd>This is a <strong>strongly emphasized</strong> tag.<p>
+
+<dd>This is an &lt;em&gt;emphasized&lt;/em&gt; tag.
+
+<dd>This is an <em>emphasized</em> tag.
+</dl>
+
+There is a subtle distinction between the above "physical" tags which merely
+change the displayed font, and "logical" styles which are used (or eventually
+will be) to make types of emphasis client specific (for instance, using the
+&lt;em&gt; tag would make text red).  While either style is fine, be aware that
+differences in these two kinds of tags may be more apparent with advances in
+HTML.<p>
+
+<hr>
+
+<a name="i"><h3>Lists</h3></a>
+
+There is an easy way in HTML to have numbered, unnumbered, and definition
+lists. In addition, you can nest lists within lists.<p>
+
+When using lists, you have no control over the amount of space between the
+bullet or list number, HTML automatically does this for you. Neither (as yet)
+do you have control over what type of bullet will be used as each browser is
+different.<p>
+
+<strong>Unnumbered lists</strong><p>
+
+<blockquote>
+
+Unnumbered lists are started with the &lt;ul&gt; tag, followed by the actual
+list items, which are marked with the  &lt;li&gt; tag. The list is ended 
+with the ending tag &lt;/ul&gt;.<p>
+
+For example, here is an unnumbered list with three items:<p>
+
+<pre>
+&lt;ul&gt;
+&lt;li&gt; list item 1
+&lt;li&gt; list item 2
+&lt;li&gt; list item 3
+&lt;/ul&gt;
+
+</pre>
+
+Here is how that list would display:<p>
+<ul>
+<li>list item 1
+<li>list item 2
+<li>list item 3
+</ul>
+
+</blockquote>
+
+<strong>Numbered lists</strong><p>
+
+<blockquote>
+
+Here is the same list using a numbered list format:<p>
+
+<pre>
+&lt;ol&gt;
+&lt;li&gt; list item 1
+&lt;li&gt; list item 2
+&lt;li&gt; list item 3
+&lt;/ol&gt;
+
+</pre>
+
+Here is how that list would display:<p>
+<ol>
+<li>list item 1
+<li>list item 2
+<li>list item 3
+</ol>
+
+</blockquote>
+
+<strong>Definition lists</strong><p>
+
+<blockquote>
+
+Definition lists allow you to indent without necessarily having to use
+bullets.<p>
+
+<pre>
+&lt;dl&gt;
+&lt;dt&gt; This is a term
+&lt;dd&gt; This is a definition
+&lt;dd&gt; And yet another definition
+&lt;dt&gt; Another term
+
+&lt;dd&gt; Another definition
+&lt;/dl&gt;
+</pre>
+
+And here is how this would be displayed<p>
+
+<dl>
+<dt>This is a term
+<dd>This is a definition.
+<dd>And yet another definition.
+<dt>Another term
+<dd>Another definition
+</dl>
+
+</blockquote>
+
+<strong>Nested lists</strong><p>
+
+<blockquote>
+
+Finally, here is a nested list within an unnumbered list 
+(we could just have easily had a nested list within a numbered
+list).<p>
+
+<pre>
+&lt;ul&gt;
+&lt;li&gt; list item 1
+ &lt;ul&gt;
+
+ &lt;li&gt; nested item 1
+ &lt;li&gt; nested item 2
+ &lt;/ul&gt;
+&lt;li&gt; list item 2
+ &lt;ul&gt;
+ &lt;li&gt; nested item 1
+ &lt;li&gt; nested item 2
+ &lt;/ul&gt;
+
+&lt;li&gt; list item 3
+ &lt;ul&gt;
+ &lt;li&gt; nested item 1
+ &lt;li&gt; nested item 2
+ &lt;/ul&gt;
+&lt;/ul&gt;
+</pre>
+
+Here is how that list would display:<p>
+<ul>
+<li>list item 1
+ <ul>
+ <li> nested item 1
+ <li> nested item 2
+ </ul>
+<li>list item 2
+ <ul>
+ <li> nested item 1
+ <li> nested item 2
+ </ul>
+
+<li>list item 3
+ <ul>
+ <li> nested item 1
+ <li> nested item 2
+ </ul>
+</ul>
+
+</blockquote>
+
+<hr>
+
+<a name="j"><h3>Blockquote</h3></a>
+
+The blockquote tag indents the text (both on the left and right) inside the
+tags.  The blockquote tag looks like this:<p>
+
+<pre>&lt;blockquote&gt;...&lt;/blockquote&gt;</pre>
+
+and displays like this:<p>
+
+<blockquote>Blockquoted text is often used for indenting big blocks of text
+such as quotations.  The text will be indented until the ending tag is
+encountered. Again, note that the text here is indented on both the left and
+the right margins.</blockquote>
+<hr>
+
+<h3><a name="k">Center</a></h3>
+
+You can center text, images, and headings with the center tag:<p>
+
+<pre>&lt;center&gt;This is a centered sentence&lt;/center&gt;</pre><p>
+
+<center>This is a centered sentence.</center><p>
+
+The center tag automatically inserts a line break after the closing center
+tag.<p>
+
+
+
+<hr> 
+<a name="l"><h3>Horizontal Rule</h3></a>
+
+To separate sections in a document, you can insert a horizontal rule tag
+&lt;hr&gt;.  A horizontal rule is displayed as follows:<p>
+
+<hr>
+
+<a name="m"><h3>Addresses</h3></a>
+
+The &lt;address&gt; tag normally appears at the end of a document and is used
+most frequently to mark information on contacting the author or institution
+that has supplied this information.  Anything contained within the address tag
+appears in italics. The address tag is another example of a logical tag, and
+although it currently does nothing but make text appear in italics, this could
+change as HTML code advances.<p>
+
+Here is an example of how an address might appear:<p>
+
+<pre>
+&lt;address&gt;
+Introduction to HTML / Pat Androget / Pat_Androget@ncsu.edu
+&lt;/address&gt;
+</pre>
+
+And it would appear as:<p>
+<address>
+Introduction to HTML / Pat Androget / Pat_Androget@ncsu.edu
+</address>
+
+<p>
+
+<hr>
+
+<a name="n"><h3>Comments</h3></a>
+
+It is possible to include comments in a source HTML document that do not appear
+when seen through a browser. This is most useful for giving warnings and
+special instructions to future editors of your document.<p>
+
+Comments take the form:<p>
+
+<pre>
+&lt;!-----This comment will not appear in the browser-----&gt;
+</pre>
+
+The comment can even break lines<p>
+
+<pre>
+&lt;!----This comment won't be seen by 
+anyone either even though it's broken between lines---&gt;
+</pre>
+
+
+
+<hr>
+
+<a name="o"><h3>Strike-through</h3></a>
+
+Should you want it, there is a strike-through tag which displays text with a
+strike.<p>
+
+<pre>
+&lt;strike&gt;This is struck through text&lt;/strike&gt;
+</pre>
+
+displays as<p>
+
+<strike>This is struck through text</strike><p>
+
+<hr>
+
+<a name="p"><h3>Special Characters</h3></a>
+
+Finally, if you often use the characters which make up HTML tags (such as
+&lt;<b> </b>&gt;, and &amp;), or you use special characters not in the ascii
+standard, you will have to use special tags. Here are the codes:<p>
+
+
+<PRE>
+&amp;aacute; .... &aacute;    &amp;acirc;  .... &acirc;    &amp;aelig;  .... &aelig;    
+&amp;agrave; .... &agrave;    &amp;amp;    .... &amp;    &amp;aring;  .... &aring;    
+
+&amp;atilde; .... &atilde;    &amp;auml;   .... &auml;    &amp;ccedil; .... &ccedil;    
+&amp;eacute; .... &eacute;    &amp;ecirc;  .... &ecirc;    &amp;egrave; .... &egrave;    
+&amp;eth;    .... &eth;    &amp;euml;   .... &euml;    &amp;gt;     .... &gt;    
+
+&amp;iacute; .... &iacute;    &amp;icirc;  .... &icirc;    &amp;igrave; .... &igrave;    
+&amp;iuml;   .... &iuml;    &amp;lt;     .... &lt;    &amp;ntilde; .... &ntilde;    
+&amp;oacute; .... &oacute;    &amp;ocirc;  .... &ocirc;    &amp;ograve; .... &ograve;    
+
+&amp;oslash; .... &oslash;    &amp;otilde; .... &otilde;    &amp;ouml;   .... &ouml;    
+&amp;quot;   .... &quot;    &amp;szlig;  .... &szlig;    &amp;thorn;  .... &thorn;    
+&amp;uacute; .... &uacute;    &amp;ucirc;  .... &ucirc;    &amp;ugrave; .... &ugrave;    
+
+&amp;uuml;   .... &uuml;    &amp;yacute; .... &yacute;    &amp;yuml;   .... &yuml;    
+</PRE>
+
+<hr>
+
+
+<cite>
+Return to <a href="html_basics.html">Table of Contents</a>
+</cite>
+
+</body>
+</html>
